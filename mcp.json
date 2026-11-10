@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "buildcord": {
+      "url": "https://api.buildcord.dev/mcp"
+    }
+  }
+}

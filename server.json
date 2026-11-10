@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.buildcord/buildcord",
+  "title": "Buildcord",
+  "description": "Build and change Discord bots by describing them: slash commands, events, embeds, modals and data.",
+  "websiteUrl": "https://buildcord.dev/",
+  "repository": {
+    "url": "https://github.com/buildcord-dev/mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "icons": [
+    {
+      "src": "https://buildcord.dev/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.buildcord.dev/mcp"
+    }
+  ]
+}

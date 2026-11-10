@@ -1,0 +1,15 @@
+{
+  "name": "buildcord",
+  "version": "1.0.0",
+  "description": "Build and change Discord bots in Buildcord by describing what they should do: slash commands, events, schedules, buttons, forms, embeds and saved data.",
+  "author": {
+    "name": "Buildcord",
+    "email": "support@buildcord.dev",
+    "url": "https://buildcord.dev"
+  },
+  "homepage": "https://buildcord.dev",
+  "repository": "https://github.com/buildcord-dev/mcp",
+  "license": "MIT",
+  "keywords": ["discord", "discord bot", "bot builder", "slash commands", "no code", "mcp"],
+  "logo": "assets/logo.png"
+}
