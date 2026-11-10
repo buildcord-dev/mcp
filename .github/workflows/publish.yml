@@ -1,0 +1,18 @@
+name: Publish to the MCP Registry
+
+on:
+  push:
+    branches: [main]
+    paths: [server.json]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mcp-publisher
+        run: curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+      # MCP_REGISTRY_KEY is the hex Ed25519 private key whose public half is in buildcord.dev's TXT record.
+      - run: ./mcp-publisher login dns --domain buildcord.dev --private-key "${{ secrets.MCP_REGISTRY_KEY }}"
+      - run: ./mcp-publisher publish

@@ -1,0 +1,17 @@
+{
+  "name": "buildcord",
+  "description": "Buildcord's plugin for building Discord bots from Claude.",
+  "owner": {
+    "name": "Buildcord",
+    "email": "support@buildcord.dev"
+  },
+  "plugins": [
+    {
+      "name": "buildcord",
+      "source": "./",
+      "description": "Build and change Discord bots in Buildcord by describing what they should do.",
+      "homepage": "https://buildcord.dev",
+      "category": "development"
+    }
+  ]
+}
